@@ -1,0 +1,17 @@
+
+a = complex(2,4);
+b = complex(4,8);
+c = complex(5,4);
+
+
+#soma
+print(a+b+c);
+
+#subtração
+print(a-b-c);
+
+#divisão
+print(a/b/c);
+
+#multiplicação
+print(a*b*c);

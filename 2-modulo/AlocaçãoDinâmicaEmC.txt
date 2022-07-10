@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int i, tam = 12;
+    char *nome;
+    
+    nome = (char *) malloc(tam *sizeof(char));
+    
+    nome = "Felipe tam12";
+    printf("\n\t%s", nome);
+    
+    
+    nome = (char *) realloc(NULL, 22 * sizeof(char));
+    
+    nome = "Felipe Floriano tam22";
+    printf("\n\t%s", nome);
+   
+        nome = malloc (tam * sizeof(char)) ;
+        free (nome) ;
+        nome = NULL ;  
+        
+    printf("\n\n\nO seu Vetor ocupa: %d bytes\n", sizeof(nome));
+    printf("\n\n");
+    return 0;
+}

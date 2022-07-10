@@ -1,0 +1,25 @@
+Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+Dois exemplos:
+
+1- Utilizado em apps de mapas
+2- Nas redes sociais digitais com a conexão entre os usuários.
+
+Breve pesquisa sobre os grafos:
+
+
+Grafos - São amplamente usados em matemática, mas sobretudo em programação.
+
+Formalmente, um grafo é uma colecção de vértices (V) e uma colecção de arcos (E) constituídos por pares de vértices. É uma estrutura usada para representar um modelo em que existem relações entre os objectos de uma certa colecção.
+
+Pense nos vértices como “locais“. O conjunto dos vértices é o conjunto de todos os locais possíveis. Nesta analogia, os arcos (ou arestas) representam caminhos entre estes locais. O conjunto E (vou usar o termo mais comum – “E” do inglês “edges“) contém todas as ligações entre os locais.
+
+Utilizar grafos é de grande utilidade na representação de problemas da vida real.
+
+
+Podem ser cidades, e uma rede de estradas. Redes de computadores. Até mesmo os movimentos de um cavalo num tabuleiro de xadrez podem ser representados através de um grafo. Na prática:
+
+As linhas de metro das grandes cidades utilizam grafos de modo a minimizarem o tempo das ligações;
+A distribuição de correio, minimizando percursos de forma a optimizar as deslocações, tanto para um único carteiro como para uma equipa (o mesmo se aplica a empresas de distribuição);
+Os sistemas de patrulha da PSP permitem estudos de optimização recorrendo a grafos.
+E depois de representá-los correctamente, o que podemos descobrir? O caminho mais curto entre duas cidades num mapa; dadas as coordenadas de n cidades, que estradas construir de modo que o número de quilómetros de estrada seja mínimo mas fiquem todas conectadas; dado um mapa de uma casa (em que paredes e chão são representados com caracteres diferentes) saber qual a divisão com maior área; etc.
