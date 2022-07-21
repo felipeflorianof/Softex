@@ -1,0 +1,44 @@
+Escolha e descreva um padrão de projetos.
+Aluno: Felipe Floriano de Fontes, Back-end;
+
+Creational Patterns - Padrões de Criação - Visam abstrair o processo de instanciação de um objeto.
+
+Um dos exemplos:
+
+Abstract Factory
+
+A intenção deste é fornecer uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. Também é conhecido como Kit.
+
+Este padrão deve ser aplicado quando se deseja isolar a aplicação da implementação da classe concreta, que poderia ser um componente e ou framework específico no qual a aplicação conheceria apenas uma interface e a implementação concreta seria conhecida apenas em tempo de execução ou compilação.
+
+Imagine que em uma aplicação houvesse a necessidade de que ela fosse implementada para oferecer suporte a plataformas e características distintas. Por exemplo: Uma visão desktop e uma móvel (celular Pocket PC). A maneira de constituí-la, seria definindo uma família de componentes para cada plataforma e uma fábrica que os instancia de acordo com a plataforma alvo na qual a aplicação será executada.
+
+De acordo com o exposto pelos quatro amigos, o uso do padrão Abstract Factory deve estar restrito as seguintes situações:
+
+Um sistema deve ser independente de como seus produtos são criados, compostos ou representados;
+Um sistema deve ser configurado como um produto de uma família de múltiplos produtos;
+Uma família de objetos for projetada para ser usada em conjunto, e você necessita garantir esta restrição;
+Você quer fornecer uma biblioteca de classes de produtos e quer revelar somente suas interfaces, não suas implementações.
+
+Outro exemplo: 
+
+Factory Method
+
+Definir uma interface para criar objetos, mas deixar que as subclasses decidem que classe instanciar. O Factory Method, também conhecido como construtor virtual, possibilita adiar a criação do objeto a subclasses .
+
+Esse padrão é comumente utilizado pelos projetistas de software quando existe a necessidade de encapsular a criação de uma classe se isolando do conhecimento da classe concreta da aplicação cliente através de uma interface. Essa necessidade é comumente desejada por aqueles que trabalham no desenvolvimento de frameworks, que utilizam classes abstratas para definir e manter relacionamentos entre os objetos. Dessa forma os clientes implementam as funcionalidades esperadas pelo framework adicionando a lógica de negócio específica da aplicação, sem que o framework tenha o conhecimento de como e qual a lógica implementada pela aplicação para complementá-lo.
+
+Um exemplo de utilização do padrão pode ser na construção de aplicações que tenha que dar suporte a diferentes implementações de persistência com o mínimo de retrabalho.
+
+A utilização do padrão Factory Method pode estar condicionada quando:
+
+Uma classe não pode antecipar a classe/tipo de objetos que devem criar;
+Uma classe especifique que suas subclasses tenham o conhecimento dos objetos que criam;
+Classes que delegam responsabilidade para uma dentre várias subclasses auxiliares, e você quer obter o conhecimento de qual subclasse auxiliar que é a delegada.
+Os participantes são:
+
+Product - define a interface de objetos que deverá ser criado pelo método fábrica;
+ConcreteProduct – implementação da interface Product;
+Creator – declara o método fábrica o qual retorna um objeto do tipoProduct;
+ConcreteCreator – redefine(override) o método fábrica que retorna uma instância concreta da interfaceProduct.
+O padrão Factory Method elimina a necessidade de anexar classes específicas das aplicações no código. O código lida somente com a interface de Product; portanto ele pode trabalhar com qualquer implementação da classe que implementa Product, definida pelo usuário.
