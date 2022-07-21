@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>  
+        /* 
+        Aqui conseguimos observar no console.log() que se não passarmos os parâmetros n1 e n2, o código lançará um erro no nosso 
+        log(), para acessar as mensagens clique com o botão direito do mouse, inspecionar, depois clique em console, teste o código
+        dessa forma, você verá o erro, depois adicione o n1 e o n2 como parâmetros na função somar, e você verá que irá funcionar.
+        */
+        var n1 = parseInt(prompt("Digite um número:"));
+        var n2 = parseInt(prompt('Digite outro número:'));
+        
+        try{
+            function somar(num1, num2){
+                if(!num1 && !num2) throw new ReferenceError('Envie os parâmetros');
+                if(num1, num2){
+                    alert(num1 + num2);
+                }
+        }
+        
+        somar(/*n1,n2*/);
+        
+        }catch (e) {
+         if(e instanceof ReferenceError) {
+             console.log("Este erro é um ReferenceError")
+             console.log(e.message)
+         }
+        }
+        
+    
+    </script>
+</body>
+</html>
