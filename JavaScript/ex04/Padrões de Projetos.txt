@@ -1,0 +1,54 @@
+Padrões de projeto são soluções reutilizáveis ​​para problemas comuns em projetos de software. Eles são interessantes e fascinantes para explorar em qualquer linguagem de programação.
+
+Uma razão para isso é que eles nos ajudam a construir a experiência combinada de muitos desenvolvedores que vieram antes de nós e a garantir que estruturemos nosso código de maneira otimizada, atendendo às necessidades dos problemas que estamos tentando resolver.
+
+Boas práticas
+Seguir boas práticas é algo essencial, na programação e não é diferente quando se trata de JavaScript. Inúmeros problemas podem ser evitados ou contornados seguindo boas práticas, além de facilitar o trabalho em equipe e manutenibilidade do código.
+
+Características de um padrão de projeto
+Embora um padrão seja a descrição de um problema, de uma solução genérica e sua justificativa, isso não significa que qualquer solução conhecida para um problema possa constituir um padrão, pois existem características obrigatórias que devem ser atendidas pelos padrões: .
+
+Devem possuir um nome, que descreva o problema, as soluções e consequências. Um nome permiti definir o vocabulário a ser utilizado pelos projetistas e desenvolvedores em um nível mais alto de abstração.
+Todo padrão deve relatar de maneira clara a qual (is)problema(s) ele deve ser aplicado, ou seja, quais são os problemas que quando inserido em um determinado contexto o padrão conseguirá resolvê-lo. Alguns podendo exigir pré-condições.
+Solução descreve os elementos que compõem o projeto, seus relacionamentos, responsabilidades e colaborações. Um padrão deve ser uma solução concreta, ele deve ser exprimido em forma de gabarito (algoritmo) que, no entanto, pode ser aplicado de maneiras diferentes.
+Todo padrão deve relatar quais são as suas consequências para que possa ser analisada a solução alternativa de projetos e para a compreensão dos benefícios da aplicação do projeto.
+Não pode ser considerado um padrão de projeto trecho de códigos específicos, mesmo que para o seu criador ele reflita um padrão, que soluciona um determinado problema, porque os padrões devem estar a um nível maior de abstração e não limitado a recursos de programação. Um padrão de projeto nomeia, abstrai e identifica os aspectos chaves de uma estrutura de projeto comum para torná-la útil para a criação de um projeto orientado a objetos reutilizável.
+
+Padrões de criação -
+Abstract Factory
+Factory Method
+Singleton
+
+Vamos ver um pouco sobre o Abstract Factory: 
+
+A intenção deste é fornecer uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. Também é conhecido como Kit.
+
+Este padrão deve ser aplicado quando se deseja isolar a aplicação da implementação da classe concreta, que poderia ser um componente e ou framework específico no qual a aplicação conheceria apenas uma interface e a implementação concreta seria conhecida apenas em tempo de execução ou compilação.
+
+Quando os padrões não o ajudarão
+
+Os padrões são um mapa, não uma estratégica. Os catálogos geralmente apresentarão algum código-fonte como uma estratégica de exemplo, portanto eles não devem ser considerados como definitivos. Os padrões não ajudarão a determinar qual aplicação você deve estar escrevendo apenas como implementar melhor a aplicação assim que o conjunto de recursos e outras exigências forem determinados. Os padrões ajudam com o que e como, mas não com por que ou quando.
+
+O conceito de utilizar os padrões de forma indiscriminada é conhecida como antipadrões (anti patterns). De acordo com Andrew Koenig, se um padrão representa a “melhor prática”, então um antipadrão representa uma “lição aprendida”.
+
+Existem duas noções de antipadrões:
+
+Aqueles que descrevem uma solução ruim para um problema que resultou em uma situação ruim;
+Aqueles que descrevem como se livrar de uma situação ruim e como proceder dessa situação para uma situação boa.
+Em suma um antipadrão constitui ao uso indevido dos padrões de projeto, ou o seu uso exagerado, o que pode ser constatado pela utilização de padrões impróprios para um determinado contexto, ou uso inadequado. A utilização dos padrões proporciona um aumento na flexibilidade do sistema, entretanto pode deixá-lo mais complexo ou degradar a performance. Algumas perdas são toleráveis, mas subestimar os efeitos colaterais da adoção dos patterns, é um erro comum, principalmente daqueles que tomam o uso como um diferencial e não pela real necessidade.
+
+Como padrões de projeto solucionam problemas de projeto:
+
+O alvo principal do uso dos padrões de projeto no desenvolvimento de software é o da orientação a objetos. Como os objetos são os elementos chaves em projetos OO, a parte mais difícil do projeto é a decomposição de um sistema em objetos. A tarefa é difícil porque muitos fatores entram em jogo: encapsulamento, granularidade, dependência, flexibilidade, desempenho, evolução, reutilização e assim por diante. Todos influenciam a decomposição, frequentemente de formas conflitantes.
+
+Muito dos objetos participantes provêm do método de análise. Porém, projetos orientados a objetos acabam sendo compostos por objetos que não possui uma contrapartida no mundo real.
+
+As abstrações que surgem durante um projeto são as chaves para torná-lo flexível. Os padrões de projeto ajudam a identificar abstrações menos óbvias bem como os objetos que podem capturá-las. Por exemplo, objetos que representam processo ou algoritmo não ocorrem na natureza, no entanto, eles são uma parte crucial de projetos flexíveis. Esses objetos são raramente encontrados durante a análise ou mesmo durante os estágios iniciais de um projeto; eles são descobertos mais tarde, durante o processo de tornar-se um projeto mais flexível e reutilizável.
+
+
+
+Conclusão:
+
+O uso de padrões de projeto propicia a construção de aplicações e ou estruturas de código de forma flexível e a documentação de soluções reaproveitáveis. Através dos padrões de projeto é possível identificar os pontos comuns entre duas soluções diferentes para um mesmo problema. Conhecer esses pontos comuns nos permite desenvolver soluções cada vez melhores e mais eficientes que podem ser reutilizadas, permitindo, assim, o avanço do conhecimento humano.
+
+Os padrões possibilitam através de uma linguagem clara e concisa, que os projetistas experientes transfiram os seus conhecimentos aos mais novos em um alto nível de abstração e assim facilitam o desenvolvimento e o reaproveitamento de código.
