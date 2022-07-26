@@ -1,0 +1,40 @@
+    var readlineSync = require('readline-sync');
+
+    var teste = readlineSync.question('\n\n Digite a operacao que deseja realizar.\n Considere - \n + \n - \n * \n / \n ** \n\n');
+    var n1 = parseFloat(readlineSync.question('Digite um numero: '));
+    var n2 = parseFloat(readlineSync.question('Digite outro numero: '));
+
+
+        if(teste == '+'){
+            console.log(n1+n2);
+        }else if(teste == '-'){
+            console.log(n1-n2);
+        }
+        else if(teste == '*'){
+            console.log(n1*n2);
+        }
+        else if(teste == '/'){
+            console.log('Divisao inteira: ' + Math.floor(n1/n2));
+            if(n1%n2 != 0){
+                console.log('e o resto da divisao: '+(n1%n2));
+            }  
+        }
+        else if(teste == '**'){
+            console.log(n1**n2);
+        }else{
+            console.log('Passe Valores Validos para utilizar a Calculadora.');
+        }
+
+
+        
+           <!--Atenção:--> 
+           <!--Este arquivo deveria estar em .js porém deixei em .html,--> 
+           <!--Estou refazendo este exercicio e pra entregar na plataforma do curso o link não pode ser alterado--> 
+           <!--Então como da primeira vez fiz em html manti o formato apenas por apenas por questões de correção.--> 
+           <!--Para executar abra o terminal, entre na pasta ex05 e depois chame o 'node index.html', o programa deve funcionar sem problemas.--> 
+            
+            
+            
+
+            
+        
