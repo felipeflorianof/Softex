@@ -1,0 +1,7 @@
+Aluno: Felipe Floriano de Fontes - backend, segunda-feira(08:00/12:00);
+Desenvolva um banco de dados que relacione tabelas através de chaves estrangeiras ou nomes de colunas iguais. Após isso, realize todos os comandos Joins estudados.
+
+use projeto_recifacil;
+select users.nome, endereco.cidade, endereco.estado from users inner join endereco on endereco.cep = users.fk_endereco;
+select users.nome, endereco.cidade, endereco.estado from users left join endereco on endereco.cep = users.fk_endereco;
+select users.nome, endereco.cidade, endereco.estado from users right join endereco on endereco.cep = users.fk_endereco;
