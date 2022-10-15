@@ -1,0 +1,9 @@
+create trigger tr_ins_name before insert on users for each row set new.nome = upper(new.nome);
+
+-- Cria um gatilho que altera o nome digitado pelo usuário o fazendo sempre ficar em UPPERCASE
+
+insert into users values('156546', 'Teste', '123', 'feli5t@gmail.com', 88880000, 'Masculino', '2032-05-43', default, default);
+insert into users values('15654543546', 'Teste', '123', 'felihffhfh5t@gmail.com', 88880000, 'Masculino', '2032-05-43', default, default);
+insert into users values('145653534', 'felipe', '123', 'feli5rt@gmail.com', 88880000, 'Masculino', '2032-05-43', default, default);
+
+select * from users;
