@@ -1,0 +1,29 @@
+Aluno: Felipe Floriano de Fontes, Back-end - Segunda-Feira(08:00/12:00);
+
+
+- Com base nos vídeos 1 e 2, explique como a web funciona a partir do ponto de vista do protocolo cliente servidor.
+
+Clientes são os típicos dispositivos conectados à internet dos usuários da web 
+(por exemplo, seu computador conectado ao seu Wi-Fi ou seu telefone conectado à sua rede móvel)
+e programas de acesso à Web disponíveis nesses dispositivos (geralmente um navegador como Firefox ou Chrome).
+
+
+Servidores são computadores que armazenam páginas, sites ou aplicativos. 
+Quando o dispositivo de um cliente quer acessar uma página,
+uma cópia dela é baixada do servidor para a máquina do cliente para ser apresentada no navegador web do usuário.
+
+- Crie o começo de um projeto em node.js, usando o npm e informe os comandos utilizados.
+
+no cmd Faça os seguintes comandos:
+mkdir nodeapp  
+cd nodeapp  
+npm init
+npm install
+
+Isso criará uma pasta chamada nodeapp irá acessá-la iniciar o npm e instalar os módulos principais do npm
+caso queira um pacote específico basta executar o seguinte comando no terminal
+
+npm install NOME_DO_PACOTE
+
+
+
