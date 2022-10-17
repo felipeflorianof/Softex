@@ -1,0 +1,17 @@
+Uma empresa precisa criar um relatório que faça um levantamento diário da quantidade de produtos comprados no dia.
+Para isso, crie um procedure que será usado para agilizar todos os processos.
+
+Aluno: Felipe Floriano de Fontes, Back-end - Segunda-Feira (08:00/12:00);
+
+
+ DELIMITER $
+ CREATE PROCEDURE relatorio()
+ BEGIN
+ SELECT nome,data FROM produto group by data order by data asc;
+ END
+ $
+ insert into produto values(1, 'Mouse', '2022-10-17'), (default, 'Monitor', '2022-10-17'), (default, 'CPU', '2022-10-17'), (default, 'Teclado', '2022-10-17'), (default, 'Geladeira', '2009-12-01'), (default, 'Churrasqueira', '2009-12-01');
+ 
+ select * from produto;
+ 
+ call relatorio();
