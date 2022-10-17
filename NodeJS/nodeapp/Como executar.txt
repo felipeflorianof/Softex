@@ -1,0 +1,9 @@
+Para executar o código abra o terminal e digite:
+abra o cmd
+abra a pasta nodeapp
+Digite o comando: node app.js
+
+Com isso o servidor mostrará uma mensagem que está rodando, agora vá até o seu navegador
+e digite na url: localhost:8081
+
+that's it
