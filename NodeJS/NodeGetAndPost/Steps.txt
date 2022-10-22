@@ -1,0 +1,6 @@
+don't forget to install:
+
+npm init
+npm install
+npm install express
+npm install nodemon
