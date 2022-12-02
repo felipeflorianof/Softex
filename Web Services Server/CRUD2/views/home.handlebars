@@ -1,0 +1,21 @@
+<h1>Lista de Pessoas Cadastradas:</h1>
+<a href="/cad">Adicionar Usuário</a>
+{{#each posts}}
+
+    <h1>{{dataValues.usuario}}</h1>
+    <p>{{dataValues.talent}}</p>
+    <p>Linguagens - {{dataValues.linguagem}}</p>
+    <p>{{dataValues.createdAt}}</p>
+    <p>
+        <a href="/cad"><button>Criar</button></a>
+        <a href="/deletar/{{dataValues.id}}"><button>Remover</button></a>
+        <form action="/edit/{{dataValues.id}}"method="get"><button type="submit">edit</button></form>
+    </p>
+          
+
+{{/each}}
+
+
+   
+          
+  
