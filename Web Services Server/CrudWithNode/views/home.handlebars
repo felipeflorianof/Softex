@@ -1,0 +1,21 @@
+<h1>Lista de Produtos</h1>
+<a href="/cad">Adicionar Produto</a>
+{{#each posts}}
+
+    <h1>{{dataValues.nome}}</h1>
+    <p>{{dataValues.descricao}}</p>
+    <p>Fabricante - {{dataValues.fabricante}}</p>
+    <p>{{dataValues.createdAt}}</p>
+    <p>
+        <a href="/cad"><button>Criar</button></a>
+        <a href="/deletar/{{dataValues.id}}"><button>Remover</button></a>
+        <form action="/edit/{{dataValues.id}}"method="get"><button type="submit">edit</button></form>
+    </p>
+          
+
+{{/each}}
+
+
+   
+          
+  
