@@ -1,2 +1,2 @@
 # Softex
-Repositório Criado para Publicação das Atividades e Projetos Desenvolvidos no Curso back-end da Softex Recife.
+My Studies in Programming Logic, Database, Design Patterns, JavaScript, Node.js and Web Services Server in the following course -> back-end from Softex Recife.
