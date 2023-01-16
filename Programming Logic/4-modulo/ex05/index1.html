@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.</p>
+
+    <script>
+        var test = document.getElementById('test');
+        test.innerHTML = "Manipulando HTML pelo JS, dê um inspecionar e vá em console para ver os console.log() e analisar o código.";
+
+        var nome = prompt('Digite seu nome:');
+        alert('Olá '+nome);
+
+        var idade = prompt('Quantos anos você tem?')
+        convercao = parseInt(idade); // transformando uma string em um número inteiro
+
+        alert(idade+' anos né? legal.');
+        console.log("Com a conversão de string pra int é possivel somar a variavel idade com + 10 ou qualquer outro numero, segure o exemplo: idade + 10 =",convercao + 10);
+        
+        console.log(nome);
+        console.log(convercao);
+        console.log(idade);
+
+    </script>
+</body>
+</html>
